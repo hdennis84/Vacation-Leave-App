@@ -1,0 +1,20 @@
+<!--This is a parent component which will have two child components; one for My Leaves and another for Leave Requests.-->
+<template>
+   <!--This is a lightning card which will have two tabs; one for My Leaves and another for Leave Requests.-->
+    <lightning-card>
+        <lightning-tabset>
+
+            <lightning-tab title="My Leaves" label="My Leaves">
+             <!--This is a child component which will display the list of leaves taken by the logged in user.-->
+                <c-my-leaves></c-my-leaves>   
+            </lightning-tab>
+            
+           
+              <lightning-tab title="Leave Requests" label="Leave Request">
+                <!--This is a child component which will display the list of leave requests submitted by the logged in user.-->
+                <c-leave-requests></c-leave-requests> 
+            </lightning-tab>
+            </lightning-tabset>
+    </lightning-card>
+</template>
+ 
